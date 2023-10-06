@@ -1,4 +1,3 @@
-import sys
 import subprocess
 import matplotlib.pyplot as plt
 import squarify
@@ -213,7 +212,6 @@ elif args.format == 'json':
         print(json.dumps(log))
     exit()
 elif args.format == 'csv':
-    print(log)
     if args.summary:
         print('path,changes')
         for change in sorted_changes:
